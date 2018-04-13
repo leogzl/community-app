@@ -35,8 +35,8 @@ mifosX.ng.application.directive("ngDisplaypanel", [mifosX.directives.ActivitiesD
                         '<label ng-show="errorStatus">{{errorStatus}}</label><br />' +
                         '<div ng-repeat="error in errorArray">' +
                             '<label ng-hide="errorStatus">' +
-                                '{{error.code | translate:error.args}} - {{error.datatable}}' +
-                            '</label>' +
+                                '{{error.code | translate:error.args}}' +
+                            '</label>'
                         '</div></div></div>';
                     elm.html('').append($compile(template)(scope));
                 }
@@ -249,7 +249,7 @@ mifosX.ng.application.directive("rcSubmit", ['$parse', mifosX.directives.FormSub
                     scope.formNameAttribute = attr.valattributeform;
                     scope.inputAttributeName = attr.valattribute;
                     var template = '<span  ng-show="' + scope.formNameAttribute + '.' + scope.inputAttributeName + '.$invalid">' +
-                        '<small class="error" ng-show="' + scope.formNameAttribute + '.' + scope.inputAttributeName + '.$error.req || rc.' + scope.formNameAttribute + '.attempted || ' + scope.formNameAttribute + '.$submitted ">' +
+                        '<small class="error" ng-show="' + scope.formNameAttribute + '.' + scope.inputAttributeName + '.$error.req || rc.' + scope.formNameAttribute + '.attempted">' +
                         '{{' + "'label.requirefield'" + ' | translate}}' +
                         '</small>' +
                         '</span>';

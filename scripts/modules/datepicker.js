@@ -92,7 +92,7 @@ angular.module('modified.datepicker', ['strap.position'])
         showToday: true,
         startingDay: 0,
         yearRange: 20,
-        minDate: new Date(new Date().getFullYear(), 0, 1),
+        minDate: null,
         maxDate: null
     })
 

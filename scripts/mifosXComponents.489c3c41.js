@@ -1,7 +1,7 @@
 define(['Q', 'underscore', 'mifosX'], function (Q) {
     var components = {
         models: [
-            'models.73fae265'
+            'models.f74aacf1'
         ],
         services: [
             'ResourceFactoryProvider',
@@ -13,13 +13,13 @@ define(['Q', 'underscore', 'mifosX'], function (Q) {
             'NotificationResponseHeaderProvider'
         ],
         controllers: [
-            'controllers.ead50054'
+            'controllers.fd25f022'
         ],
         filters: [
             'filters.34474998'
         ],
         directives: [
-            'directives.9878712a'
+            'directives.892e7f9b'
         ]
     };
 
@@ -30,7 +30,7 @@ define(['Q', 'underscore', 'mifosX'], function (Q) {
                 return group + "/" + name;
             }));
         }, [
-            'routes-initialTasks-webstorage-configuration.f20f9980'
+            'routes-initialTasks-webstorage-configuration.0d972d51'
         ]), function(){
             defer.resolve();
         });
